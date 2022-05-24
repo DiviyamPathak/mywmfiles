@@ -182,7 +182,12 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+	mode dock
+	separator_symbol ":|:"
         status_command i3status
+	i3bar_command i3bar --transparency
 }
 #starting firefox browser using bindings
 bindsym $mod+i exec firefox
+#backgroung
+exec --no-startup-id feh --bg-scale /home/pathak/Documents/wlf.png
